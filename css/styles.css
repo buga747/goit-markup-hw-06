@@ -625,6 +625,7 @@ ul {
     left: 50%;
     top: 50%;
 
+    display: inline-block;
     width: 528px;
     height: 581px;
 
@@ -634,8 +635,10 @@ ul {
 
 
     transform: translate(-50%, -50%) scale(1);
-
     transition: transform var(--trans-dur) var(--trans-t-funct);
+
+
+    padding: 40px;
 }
 
 .btn-modal-close {
@@ -659,6 +662,16 @@ ul {
 .btn-modal-close:hover,
 .btn-modal-close:focus {
     fill: var(--accent-color);
+}
+
+.modal-header {
+
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--primary-text-color);
+
+    margin-bottom: 12px;
 }
 
 
