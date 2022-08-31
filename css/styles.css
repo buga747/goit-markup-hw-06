@@ -170,8 +170,8 @@ ul {
 
 }
 
-.nav .link:hover,
-.nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
     color: var(--accent-color);
 }
 
@@ -230,13 +230,13 @@ ul {
 
     background-image:
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/background-image/hero-background-image.jpg);
+        url(../images/hero/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* width: 1600px; */
     margin-left: auto;
     margin-right: auto;
+    max-width: 1600px;
 }
 
 .main-title {
@@ -468,14 +468,9 @@ ul {
     border: 1px solid var(--icons-color);
     border-radius: var(--border-radius);
     width: 170px;
+    height: 92px;
     fill: var(--icons-color);
     transition: border-color var(--trans-dur) var(--trans-t-funct), fill var(--trans-dur) var(--trans-t-funct);
-}
-
-.clients-icon {
-    margin-top: 16px;
-    margin-bottom: 16px;
-
 }
 
 .clients-item .link:hover,
@@ -509,12 +504,12 @@ ul {
 
 .footer-logo {
     color: var(--primary-white-color);
-    transition: color var(--trans-dur) var(--trans-t-funct);
+
 }
 
 .footer-box-address {
-    width: 231px;
-    margin-right: 70px;
+
+    margin-right: 93px;
 }
 
 .address-footer .item:not(:last-child) {
@@ -527,18 +522,15 @@ ul {
     font-style: normal;
     line-height: 1.71;
     color: var(--primary-white-color);
-    transition: color var(--trans-dur) var(--trans-t-funct);
+
 }
 
 .address-email,
 .address-tel {
     color: var(--white-color-90);
+    transition: color var(--trans-dur) var(--trans-t-funct);
 }
 
-.footer-logo:hover,
-.footer-logo:focus,
-.address-map:hover,
-.address-map:focus,
 .address-email:focus,
 .address-email:hover,
 .address-tel:focus,
@@ -557,17 +549,13 @@ ul {
     margin-bottom: 20px;
 }
 
-.join>.list {
+.join .list {
     display: flex;
+    gap: 10px;
 }
 
 .join {
-    display: block;
     margin-right: 93px;
-}
-
-.join .item:not(:last-child) {
-    margin-right: 10px;
 }
 
 .join .link {
@@ -627,8 +615,6 @@ ul {
     display: flex;
 }
 
-
-
 .button-footer-subscribe {
     display: flex;
     align-items: center;
@@ -649,7 +635,6 @@ ul {
     border-radius: var(--border-radius);
 
     transform: background-color var(--trans-dur) var(--timing-function);
-
 }
 
 .footer-icon-send {
@@ -1048,11 +1033,12 @@ ul {
     gap: 30px;
 }
 
-.project-item {
+.project-item .link {
     transition: box-shadow var(--trans-dur) var(--trans-t-funct);
 }
 
-.project-item:hover {
+.project-item .link:hover,
+.project-item .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

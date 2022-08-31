@@ -432,7 +432,7 @@
       <div class="subscribe">
         <h3 class="invitation-title">Підпишіться на розсилку</h3>
 
-        <div class="subscribe-label">
+        <form class="subscribe-label">
           <label class="label-footer">
             <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
           </label>
@@ -442,11 +442,8 @@
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
-        </div>
-
-
+        </form>
       </div>
-
     </div>
   </footer>
 
@@ -487,22 +484,22 @@
           </svg>
         </label>
 
-        <label class="label-input">
+        <label class="label-input ">
           <span class="label-title">Коментар</span>
           <textarea class="form-item comment-field" name="comment" placeholder="Введіть текст"></textarea>
         </label>
-      </form>
 
-      <!-- check-box -->
 
-      <div class="agreement">
-        <input class="checkbox" type="checkbox" name="policy" id="policy">
-        <label class="label" for="policy">Погоджуюся з розсилкою та приймаю
-          <a class="modal-policy-link" href="/">Умови договору</a>
-        </label>
-      </div>
+        <!-- check-box -->
 
-      <!-- <label class="label">
+        <div class="agreement">
+          <input class="checkbox" type="checkbox" name="policy" id="policy">
+          <label class="label" for="policy">Погоджуюся з розсилкою та приймаю
+            <a class="modal-policy-link" href="/">Умови договору</a>
+          </label>
+        </div>
+
+        <!-- <label class="label">
         <input class="checkbox" type="checkbox" name="policy">
         <span class="checkbox-icon">
           <svg width="16" height="15">
@@ -513,9 +510,9 @@
           договору</a>
       </label> -->
 
-      <button class="button-modal" type="submit">Відправити</button>
+        <button class="button-modal" type="submit">Відправити</button>
 
-
+      </form>
 
 
 
