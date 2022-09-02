@@ -741,16 +741,11 @@ ul {
     margin-bottom: 10px;
 }
 
-.input-wrapper.textarea {
-    margin-bottom: 20px;
-}
+
 
 .label-name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: #757575;
     margin-bottom: 4px;
@@ -758,20 +753,17 @@ ul {
 
 
 .input-area {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--primary-text-color);
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     padding: 0 0 0 42px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color var(--trans-dur) var(--trans-t-funct);
 }
 
 .input-area:focus {
@@ -781,20 +773,24 @@ ul {
 
 .input-wrapper:hover .input-area,
 .input-wrapper:focus .input-area {
-    border-color: #2196F3;
+    border-color: var(--accent-color);
 }
 
 .input-area-icon {
     position: absolute;
     bottom: 11px;
     left: 12px;
+    transition: fill var(--trans-dur) var(--trans-t-funct);
 }
 
 .input-wrapper:hover>.input-area-icon,
 .input-wrapper:focus>.input-area-icon {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
+.input-wrapper.textarea {
+    margin-bottom: 20px;
+}
 
 .modal-textarea {
     width: 448px;
@@ -804,13 +800,10 @@ ul {
 }
 
 .modal-textarea::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
 
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     margin-bottom: 20px;
 }
@@ -855,7 +848,7 @@ ul {
     box-sizing: border-box;
 
     transition: background-color 250ms var(--timing-function),
-        border 250ms var(--timing-function);
+        border-color 250ms var(--timing-function);
 }
 
 .checkbox:checked+.label::before {
@@ -870,17 +863,17 @@ ul {
 
 }
 
-/* .checkbox:hover+.label::before,
-.checkbox:focus+.label::before {
-    border: solid 2px var(--accent-color);
-    border-radius: 2px;
-} */
-
 .checkbox:checked:hover+.label::before,
 .checkbox:checked:focus+.label::before {
     border: none;
     box-sizing: border-box;
 }
+
+/* .checkbox:hover+.label::before,
+.checkbox:focus+.label::before {
+    border: solid 2px var(--accent-color);
+    border-radius: 2px;
+} */
 
 /* .agreement {
     line-height: 1.71;
@@ -950,6 +943,8 @@ ul {
 
     margin-right: auto;
     margin-left: auto;
+    min-width: 200px;
+    min-height: 50px;
     padding: 10px 52px;
     border: 0;
 
