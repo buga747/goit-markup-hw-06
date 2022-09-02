@@ -810,9 +810,9 @@ ul {
 
 /* checkbox */
 .checkbox-wrapper {
+    position: relative;
     margin-bottom: 30px;
     justify-content: center;
-    margin-left: 14px;
 }
 
 .checkbox {
@@ -829,7 +829,7 @@ ul {
 
 .checkbox-icon {
     position: absolute;
-    left: 14px;
+
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
@@ -863,9 +863,8 @@ ul {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-
-    /* margin-left: 14px; */
     width: 100%;
+    padding-left: 14px;
 }
 
 
@@ -886,7 +885,7 @@ ul {
     display: inline-block;
     color: var(--accent-color);
     text-decoration: underline;
-    margin-left: 2px;
+    margin-left: 3px;
 }
 
 
