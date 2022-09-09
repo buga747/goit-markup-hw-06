@@ -579,6 +579,16 @@ ul {
 }
 
 /* subscribe */
+.subscribe-title {
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+
+    margin-bottom: 20px;
+}
+
 .subscribe-input {
     display: inline-block;
     width: 358px;
@@ -850,15 +860,13 @@ ul {
     border: 2px solid var(--primary-text-color);
     border-radius: var(--border-radius);
     margin-right: 7px;
-    background-color: var(--primary-white-color);
-    transition: background-color var(--trans-dur) var(--trans-t-funct), border var(--trans-dur) var(--trans-t-funct);
+    transition: background 2500ms var(--trans-dur), border var(--trans-dur) var(--trans-t-funct);
 }
 
 .checkbox:checked+.checkbox-icon {
-    border: transparent;
+    border-color: transparent;
     background-color: var(--accent-color);
 }
-
 
 .form-policy {
     margin-left: 3px;
