@@ -860,7 +860,7 @@ ul {
     border: 2px solid var(--primary-text-color);
     border-radius: var(--border-radius);
     margin-right: 7px;
-    transition: background 2500ms var(--trans-dur), border var(--trans-dur) var(--trans-t-funct);
+    transition: background var(--trans-dur) var(--trans-t-funct), border var(--trans-dur) var(--trans-t-funct);
 }
 
 .checkbox:checked+.checkbox-icon {
