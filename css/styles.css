@@ -612,10 +612,8 @@ ul {
     line-height: 1.25;
     align-items: center;
     color: rgba(255, 255, 255, 0.6);
-
 }
 
-/* .subscribe-input:hover, */
 .subscribe-input:focus-within {
     outline: 0;
     outline-offset: 0;
