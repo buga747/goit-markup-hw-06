@@ -89,8 +89,6 @@ ul {
     display: block;
 }
 
-
-
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -151,7 +149,6 @@ ul {
     transition: color var(--trans-dur) var(--trans-t-funct);
 }
 
-
 .nav-link.current {
     position: relative;
     color: var(--accent-color)
@@ -167,7 +164,6 @@ ul {
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
-
 }
 
 .nav-link:hover,
@@ -257,6 +253,7 @@ ul {
 /* кнопка */
 
 .btn {
+    cursor: pointer;
     text-align: center;
     border-radius: var(--border-radius);
     border: 0;
@@ -504,7 +501,6 @@ ul {
 
 .footer-logo {
     color: var(--primary-white-color);
-
 }
 
 .footer-box-address {
@@ -607,6 +603,8 @@ ul {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: var(--border-radius);
     margin-right: 12px;
+
+    transition: border var(--trans-dur) var(--trans-t-funct);
 }
 
 .subscribe-input::placeholder {
@@ -635,8 +633,6 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-
 
     font-weight: 700;
     font-size: 16px;
@@ -651,7 +647,7 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: var(--border-radius);
 
-    transform: background-color var(--trans-dur) var(--timing-function);
+    transition: background-color var(--trans-dur) var(--trans-t-funct);
 }
 
 .footer-icon-send {
@@ -728,7 +724,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color var(--trans-dur) var(--trans-t-funct);
+    transition: background-color var(--trans-dur) var(--trans-t-funct);
 
 }
 
@@ -754,6 +750,7 @@ ul {
     position: relative;
     display: block;
     margin-bottom: 10px;
+
 }
 
 .form-field:last-child {
@@ -776,12 +773,14 @@ ul {
     padding: 12px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border var(--trans-dur) var(--trans-t-funct);
 }
 
 .form-input-icon {
     position: absolute;
     left: 12px;
     bottom: 11px;
+    transition: fill var(--trans-dur) var(--trans-t-funct);
 }
 
 /* .form-field:hover .form-input, */
@@ -860,7 +859,7 @@ ul {
     border: 2px solid var(--primary-text-color);
     border-radius: var(--border-radius);
     margin-right: 7px;
-    transition: background var(--trans-dur) var(--trans-t-funct), border var(--trans-dur) var(--trans-t-funct);
+    transition: background-color var(--trans-dur) var(--trans-t-funct), border var(--trans-dur) var(--trans-t-funct);
 }
 
 .checkbox:checked+.checkbox-icon {
@@ -869,9 +868,9 @@ ul {
 }
 
 .form-policy {
-    margin-left: 3px;
+    margin-left: 4px;
     text-decoration-line: underline;
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 
@@ -879,7 +878,6 @@ ul {
 
 .form-btn {
     display: block;
-    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     min-height: 50px;
@@ -895,7 +893,7 @@ ul {
 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    transition: background-color var(--trans-dur) var(--timing-function);
+    transition: background-color var(--trans-dur) var(--trans-t-funct);
 }
 
 .form-btn:hover,
