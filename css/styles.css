@@ -695,8 +695,8 @@ ul {
     top: 50%;
 
     display: inline-block;
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
 
     background: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -753,7 +753,7 @@ ul {
 
 }
 
-.form-field:last-child {
+.form-field:last-of-type {
     margin-bottom: 20px;
 }
 
@@ -799,6 +799,7 @@ ul {
 }
 
 /* textarea */
+
 .form-textarea {
     display: flex;
     width: 100%;
@@ -861,6 +862,12 @@ ul {
     margin-right: 7px;
     transition: background-color var(--trans-dur) var(--trans-t-funct), border var(--trans-dur) var(--trans-t-funct);
 }
+
+.checkbox:focus+.checkbox-icon {
+    outline: 2px solid black;
+    outline-offset: 2px solid black;
+}
+
 
 .checkbox:checked+.checkbox-icon {
     border-color: transparent;
